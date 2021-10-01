@@ -16,6 +16,8 @@ namespace Lab2
                 // Declare variables and set to empty.
                 string numInput1 = "";
                 string numInput2 = "";
+                string numInput3 = "";
+                string numInput34= "";
                 double result = 0;
                 // Ask the user to type the first number.
                 Console.Write("Type a number, and then press Enter: ");
