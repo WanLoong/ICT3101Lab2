@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.22" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.22" />
+    <PackageReference Include="SpecFlow.NUnit.Runners" Version="3.9.22" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.22" />
+    <PackageReference Include="SpecRun.NUnit" Version="3.9.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Lab1\Lab2.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="SpecRun.Runner" />
+    <None Remove="SpecFlow.NUnit" />
+    <None Remove="SpecFlow.Tools.MsBuild.Generation" />
+    <None Remove="SpecFlow" />
+    <None Remove="Features\" />
+    <None Remove="Steps_Definitions\" />
+    <None Remove="SpecRun.NUnit" />
+  </ItemGroup>
+</Project>
